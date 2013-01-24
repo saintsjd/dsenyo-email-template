@@ -33,6 +33,7 @@
 			*/
 			body, .backgroundTable{
 				/*@editable*/ background-color:#d4e5aa;
+				/*@editable*/ background-color:#aac459;
 			}
 
 			/**
@@ -51,7 +52,7 @@
 			* @theme heading1
 			*/
 			h1, .h1{
-				/*@editable*/ color:#202020;
+				/*@editable*/ color:#4e2e12;
 				display:block;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:34px;
@@ -68,7 +69,7 @@
 			* @theme heading2
 			*/
 			h2, .h2{
-				/*@editable*/ color:#202020;
+				/*@editable*/ color:#4e2e12;
 				display:block;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:30px;
@@ -85,7 +86,7 @@
 			* @theme heading3
 			*/
 			h3, .h3{
-				/*@editable*/ color:#202020;
+				/*@editable*/ color:#4e2e12;
 				display:block;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:26px;
@@ -102,7 +103,7 @@
 			* @theme heading4
 			*/
 			h4, .h4{
-				/*@editable*/ color:#202020;
+				/*@editable*/ color:#4e2e12;
 				display:block;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:22px;
@@ -110,47 +111,6 @@
 				/*@editable*/ line-height:100%;
 				margin-bottom:10px;
 				/*@editable*/ text-align:left;
-			}
-
-			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: PREHEADER /\/\/\/\/\/\/\/\/\/\ */
-
-			/**
-			* @tab Header
-			* @section preheader style
-			* @tip Set the background color for your email's preheader area.
-			* @theme page
-			*/
-			#templatePreheader{
-				/*@editable*/ background-color:#FAFAFA;
-			}
-
-			/**
-			* @tab Header
-			* @section preheader text
-			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
-			*/
-			.preheaderContent div{
-				/*@editable*/ color:#505050;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:10px;
-				/*@editable*/ line-height:100%;
-				/*@editable*/ text-align:left;
-			}
-
-			/**
-			* @tab Header
-			* @section preheader link
-			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
-			*/
-			.preheaderContent div a:link, .preheaderContent div a:visited{
-				/*@editable*/ color:#336699;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
-			}
-			
-			.preheaderContent div img{
-				height:auto;
-				max-width:600px;
 			}
 
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: HEADER /\/\/\/\/\/\/\/\/\/\ */
@@ -162,7 +122,9 @@
 			* @theme header
 			*/
 			#templateHeader{
-				/*@editable*/ background-color:#FFFFFF;
+				/*@editable*/ background-color:#4e2e12;
+				/*@editable*/ background-color:#aac459;
+				/*@editable*/ background-color:#d4e5aa;
 				/*@editable*/ border-bottom:0;
 			}
 
@@ -176,15 +138,13 @@
 			* @section header text
 			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
 			*/
-			.headerContent{
-				/*@editable*/ color:#202020;
+			.headerContent div{
+				/*@editable*/ color:#FDFDFD;
+				/*@editable*/ color:#4e2e12;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:34px;
-				/*@editable*/ font-weight:bold;
-				/*@editable*/ line-height:100%;
-				/*@editable*/ padding:0;
-				/*@editable*/ text-align:center;
-				/*@editable*/ vertical-align:middle;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+				/*@editable*/ text-align:left;
 			}
 
 			/**
@@ -221,7 +181,7 @@
 			* @theme main
 			*/
 			.bodyContent div{
-				/*@editable*/ color:#505050;
+				/*@editable*/ color:#4e2e12;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:14px;
 				/*@editable*/ line-height:150%;
@@ -360,17 +320,14 @@
                                     <!-- // Begin Template Header \\ -->
                                 	<table border="0" cellpadding="10" cellspacing="0" width="600" id="templateHeader">
                                         <tr>
-                                            <td valign="top" class="bodyContent">
+                                            <td valign="top" class="headerContent">
                                             
                                                 <table border="0" cellpadding="10" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td valign="top">
                                                             <div mc:edit="std_content00">
                                                                 <span class="h4">In this Newsletter</span>
-                                                                <strong>Getting started:</strong> Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content!
-                                                                <br>
-                                                                <br>
-                                                                After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "styles" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "clear styles" button to strip the text of any formatting and reset your style.
+                                                                <strong>In this Newsletter:</strong> Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content!
                                                             </div>
 														</td>
                                                     </tr>
