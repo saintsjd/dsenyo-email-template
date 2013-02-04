@@ -47,7 +47,7 @@
 	@theme page
 	*/
 		body,#backgroundTable{
-			/*@editable*/background-color:#AAC459;
+			/*@editable*/background-color:#D4E5AA;
 		}
 	/*
 	@tab Page
@@ -168,6 +168,7 @@
 			/*@editable*/border-top:1px solid #FFFFFF;
 			/*@editable*/border-bottom:0;
 		}
+
 	/*
 	@tab Header
 	@section header text
@@ -222,6 +223,18 @@
 		#templateBodyBlock{
 			background-color:#FFFFFF;
 		}
+
+
+	/*
+	@tab Header
+	@section body text
+	@tip Set the background color for the first content block
+	@theme header
+	*/
+		#introBlock{
+			/*@editable*/background-color:#AAC459;
+		}
+
 	/*
 	@tab Body
 	@section body text
@@ -237,10 +250,25 @@
 		}
 	/*
 	@tab Body
+	@section body text
+	@tip Set the styling for the intro block
+	@theme main
+	*/
+		.introBlockContent{
+			/*@editable*/color:#4E2E12;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:15px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+
+	/*
+	@tab Body
 	@section body link
 	@tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
 	*/
-		.bodyContent a:link,.bodyContent a:visited,.bodyContent a .yshortcuts {
+		.bodyContent a:link,.bodyContent a:visited,.bodyContent a .yshortcuts,
+		.introBlockContent a:link,.introBlockContent a:visited,.introBlockContent a .yshortcuts {
 			/*@editable*/color:#AB094B;
 			/*@editable*/font-weight:bold;
 			/*@editable*/text-decoration:underline;
@@ -307,18 +335,13 @@
                         	<tr>
                             	<td align="center" valign="top">
                                 	<!-- BEGIN HEADER // -->
-                                    <table border="0" cellpadding="40" cellspacing="0" width="100%" id="templateHeader">
+                                    <table border="0" cellpadding="25" cellspacing="0" width="100%" id="templateHeader">
                                     	<tr>
                                         	<td align="center" valign="top">
                                             	<table border="0" cellpadding="0" cellspacing="0" width="600">
                                                 	<tr>
                                                     	<td class="headerContent">
                                             				<img src="dsenyo-logo-wholesale2.png" style="max-width:600px;" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext>
-                                                        </td>
-                                                    </tr>
-                                                	<tr>
-                                                    	<td class="headerContent" style="padding-top:20px;" mc:edit="header_content">
-                                                            At <a href="#">Peaceful Lotus</a>, we want to encourage restorative behavior in all its forms. From yoga to tai chi, massages to meditation, Peaceful Lotus offers a variety of different paths towards relaxation and personal betterment.
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -328,12 +351,36 @@
                                     <!-- // END HEADER -->
                                 </td>
                             </tr>
+
                             <tr>
                             	<td align="center" valign="top">
                                 	<!-- BEGIN BODY // -->
                                 	<table border="0" cellpadding="20" cellspacing="0" width="100%" id="templateBody">
+
                                     	<tr>
-                                        	<td align="center" valign="top" style="padding-top:30px;">
+                                        	<td align="center" valign="top" style="padding-top:0px;">
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="600">
+                                                	<tr>
+                                                    	<td align="center" valign="top">
+                                                            <table border="0" cellpadding="20" cellspacing="0" width="600" id="introBlock">
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="introBlockContent" mc:edit="header_content">
+				                                                            At <a href="#">Peaceful Lotus</a>, we want to encourage restorative behavior in all its forms. From yoga to tai chi, massages to meditation, Peaceful Lotus offers a variety of different paths towards relaxation and personal betterment.
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+
+
+
+                                    	<tr>
+                                        	<td align="center" valign="top" style="padding-top:10px;">
                                             	<table border="0" cellpadding="0" cellspacing="0" width="600">
                                                 	<tr>
                                                     	<td align="center" valign="top">
